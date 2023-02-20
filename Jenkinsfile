@@ -75,7 +75,7 @@ spec:
             stage('Building Docker Image'){
                 container('docker'){
                     sh '''
-                        docker build -t varunborar/my-test-app:latest
+                        docker build -t varunborar/my-test-app:latest .
                     '''
                 }
             }
